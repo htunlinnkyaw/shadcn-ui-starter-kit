@@ -19,6 +19,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
   return (
@@ -98,13 +99,7 @@ const Header = () => {
             </Button>
           </Link>
 
-          <Button
-            variant="outline"
-            size="icon"
-            className="flex bg-transparent rounded-lg text-sky-100 hover:text-sky-100 border-sky-500 hover:bg-sky-800 dark:bg-transparent border-2  dark:text-gray-300 dark:hover:bg-transparent px-4 py-2 active:scale-95  gap-1 items-center"
-          >
-            <LucideSun />
-          </Button>
+          <DarkModeToggle />
         </div>
       </header>
     </Container>
